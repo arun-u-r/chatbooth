@@ -1,7 +1,8 @@
 const express = require("express");
 const cors = require("cors");
-
+require('dotenv').config();
 const  axios  = require("axios");
+const { configDotenv, config } = require("dotenv");
 
 const app = express();
 app.use(express.json());
